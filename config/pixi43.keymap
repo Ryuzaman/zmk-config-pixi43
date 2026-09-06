@@ -67,11 +67,11 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-
         scroll_encoder: scroll_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc MOVE_Y(64)>, <&msc MOVE_Y(-64)>;
+            tap-ms = <25>;
         };
     };
 
@@ -85,6 +85,7 @@
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B             &kp LEFT_CONTROL              &kp SQT                   &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp TAB           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_GUI SPACE  &lt 1 LANGUAGE_2  &lt 2 LANGUAGE_1              &mt LEFT_SHIFT BACKSPACE  &lt 3 ENTER                             &kp SQT
             >;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         Numbers {
