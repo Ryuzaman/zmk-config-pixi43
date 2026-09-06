@@ -47,6 +47,14 @@
             bindings = <&mo 4>;
             key-positions = <13 12>;
         };
+
+        cmd_space {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <38 41>;
+            timeout-ms = <50>;
+        };
+
+
     };
 
     macros {
