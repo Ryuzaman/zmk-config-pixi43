@@ -53,8 +53,6 @@
             key-positions = <38 41>;
             timeout-ms = <50>;
         };
-
-
     };
 
     macros {
@@ -132,7 +130,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4   &mkp MB5  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                               &trans
             >;
         };
