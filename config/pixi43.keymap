@@ -42,6 +42,11 @@
             bindings = <&kp SQT>;
             key-positions = <20 21>;
         };
+
+        MouseLayer {
+            bindings = <&mo 4>;
+            key-positions = <13 12>;
+        };
     };
 
     macros {
